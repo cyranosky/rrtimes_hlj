@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { subtractionAChange } from '../actions'
+import { subtractionAChange, subtractionBChange } from '../actions'
 import Subtraction from '../components/subtraction'
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-  onAChange: subtractionAChange
+  onAChange: subtractionAChange,
+  onBChange: subtractionBChange
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Subtraction)

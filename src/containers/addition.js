@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { additionAChange } from '../actions'
+import { additionAChange, additionBChange } from '../actions'
 import Addition from '../components/addition'
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-    onAChange: additionAChange
+    onAChange: additionAChange,
+    onBChange: additionBChange
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Addition)

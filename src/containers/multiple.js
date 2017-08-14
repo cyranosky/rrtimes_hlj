@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { multipleAChange } from '../actions'
+import { multipleAChange, multipleBChange } from '../actions'
 import Multiple from '../components/multiple'
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-		onAChange: multipleAChange
+		onAChange: multipleAChange,
+		onBChange: multipleBChange
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Multiple)
